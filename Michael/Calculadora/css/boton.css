@@ -1,0 +1,20 @@
+button{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+input{
+    background-color: rgb(8, 255, 103);
+    border: none;
+    color: white;
+    padding: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

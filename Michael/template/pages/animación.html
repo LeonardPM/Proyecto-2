@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head><title>animacion</title></head>
+    <style>
+        #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: rgb(238, 255, 0);
+        }
+        #animate {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* background-color: red; */
+        }
+         
+    </style>
+    <script>
+        function myMove(objeto)
+        {
+            var elem = document.getElementById(objeto);   
+            var x = 0;
+            var y = 0;
+            var xx = 350;
+            var yy = 350;
+            var id = setInterval(MoveX, 1);
+            function MoveX() 
+            {
+                if (x == 350) {
+                    MoveY();
+                } 
+                else 
+                {
+                    x++; 
+                    elem.style.left = x + "px"; 
+                }
+            }
+            function MoveY() 
+            {
+                if (y == 350) {
+                    MoveReverX();
+                } 
+                else 
+                {
+                    y++; 
+                    elem.style.top = y + "px"; 
+                }
+            }
+            function MoveReverX() 
+            {
+                if (xx == 0) 
+                {
+                    MoveReverY() 
+                } 
+                else 
+                {
+                    xx--; 
+                    elem.style.left = xx + "px"; 
+                }
+            }
+            function MoveReverY() 
+            {
+                if (yy == 0) 
+                {
+                    clearInterval(id);
+                } 
+                else 
+                {
+                    yy--; 
+                    elem.style.top = yy + "px"; 
+                }
+            }
+        }
+        {
+            var elem = document.getElementById(objeto);   
+            var posIni = 0;
+            var id = setInterval(MoveY, 5);
+            function MoveY() 
+            {
+                if (posIni == 350) {
+                    clearInterval(id);
+                } 
+                else 
+                {
+                    posIni++; 
+                    elem.style.top = posIni + "px"; 
+                    elem.style.left = posIni + "px"; 
+                }
+            }
+        }
+        /*function my(objeto)
+        {
+            var elem = document.getElementById(objeto);   
+            var posIni = 0;
+            var id = setInterval(frame, 5);
+            function frame() 
+            {
+                if (posIni == 350) {
+                    clearInterval(id);
+                } 
+                else 
+                {
+                    posIni++; 
+                    elem.style.top = posIni + "px"; 
+                    elem.style.left = posIni + "px"; 
+                }
+            }
+        }*/
+    </script>
+<body>
+
+<p><button onclick="myMove('animate')">Click Me</button></p> 
+
+
+<div id ="container">
+    <img id ="animate" src="..\images\dog2.png" />
+</div>
+ 
+</body>
+</html>

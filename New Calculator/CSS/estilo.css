@@ -1,0 +1,21 @@
+* {
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+*::selection {
+    color: white;
+    background-color: aqua;
+}
+
+.mather_box-1 {
+    margin: 1.5em;
+    width: 75px;
+    height: 140px;
+    border: 5px solid red;
+}
+
+.box {
+    border: 3px solid blue;
+    object-fit: cover;
+}

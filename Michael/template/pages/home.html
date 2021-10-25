@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/templatemo-style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <script>
+        
+        function linea()
+        {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(20, 20);
+            ctx.lineTo(100, 20);
+            ctx.lineTo(20, 120);
+            ctx.lineTo(100, 120);            
+            ctx.stroke();
+        }
+       
+
+        function rectangulo()
+        {
+
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.rect(20, 20, 150, 100);
+            ctx.stroke();
+        }
+
+        function cuadrado()
+        {
+
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            
+            var i = 1;
+            while(i<=5)
+            {
+                ctx.rect(i*50, i*50, 100, 100);
+                i++;
+            }
+            ctx.stroke();
+        }
+
+        function circulo()
+        {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(100, 100, 10, 0, 2 * Math.PI);
+            ctx.stroke();
+        }
+        
+         
+        </script> 
+    </head>
+    <body>
+        <canvas id="myCanvas" width="500" height="500" style="border:1px solid #2e2c2c;">
+            canvas tag
+        </canvas>
+        <br>
+        <button type="button" class="btn btn-info" id="btnDibujar" onclick="cuadrado()" >Dibujar cuadrado</button>
+        <button type="button" class="btn btn-info" id="btnDibujar" onclick="rectangulo()" >Dibujar resctangulo</button>
+        <button type="button" class="btn btn-info" id="btnDibujar" onclick="circulo()" >Dibujar circulo</button>
+        <button type="button" class="btn btn-info" id="btnDibujar" onclick="linea()" >Dibujar linea</button>
+        <button type="button" class="btn btn-info">Button</button>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        <div id ="container">
+            <div id ="animate">My animation will go here</div>
+        </div>
+
+        <!-- FEATURE -->
+    <section id="feature">
+    <table>
+        <tr>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <div class="feature-thumb" >
+                    <span>01</span>
+                    <h3>Trending Courses</h3>
+                    <p>Known is free education HTML Bootstrap Template. You can download and use this for your website.</p>
+               </div>
+            </td>
+            <td >
+                <div class="feature-thumb" >
+                    <span>02</span>
+                    <h3>Books & Library</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.</p>
+               </div>
+            </td>
+            <td>
+                <div class="feature-thumb">
+                    <span>03</span>
+                    <h3>Certified Teachers</h3>
+                    <p>templatemo provides a wide variety of free Bootstrap Templates for you. Please tell your friends about us. Thank you.</p>
+               </div>
+            </td>
+        </tr>
+    </table>
+   </section>
+    </body>
+</html>

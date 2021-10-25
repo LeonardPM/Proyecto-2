@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>
+            Calculadora
+        </title>
+        <script src="js\calculo.js"></script>
+        <link rel="stylesheet" href="css\boton.css" ></link>
+    </head>
+    <body>
+        <div>
+            <table border="0">
+                <tbody><tr>
+                    <td>
+                        <img src="img/iconos/calc.png" height="70px" width="70px">
+                    </td>
+                    <td style="width:  625px;"></td>
+                    <td>
+                        <h1 style="color:red; text-align: center;  ">
+                        Calculadora
+                        </h1>
+                    </td>   
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table border="1" align="center">
+                <tbody>
+                    <tr>
+                        <td colspan="10">
+                            <input id="pantalla" style="height: 30px; width: 185px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('1')" style="height: 30px; width: 30px;">1</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('2')" style="height: 30px; width: 30px;">2</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('3')" style="height: 30px; width: 30px;">3</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="Sumar('+')" style="height: 30px; width: 30px;">+</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="limpiarpantalla()" style="height: 30px; width: 40px;">AC</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('4')" style="height: 30px; width: 30px;">4</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('5')" style="height: 30px; width: 30px;">5</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('6')" style="height: 30px; width: 30px;">6</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="Restar('-')" style="height: 30px; width: 30px;">-</button>
+                        </td>
+                        <td align="center">
+                            <button style="height: 30px; width: 40px;">MR</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('7')" style="height: 30px; width: 30px;">7</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('8')" style="height: 30px; width: 30px;">8</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('9')" style="height: 30px; width: 30px;">9</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="Multiplicar('*')" style="height: 30px; width: 30px;">*</button>
+                        </td>
+                        <td align="center">
+                            <button style="height: 30px; width: 40px;">^</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('0')" style="height: 30px; width: 30px;">0</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="MostrarEnPantalla('.')" style="height: 30px; width: 30px;">.</button>
+                        </td>
+                        <td align="center">
+                            <button style="height: 30px; width: 30px;">+-</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="Dibidir('/')" style="height: 30px; width: 30px;">/</button>
+                        </td>
+                        <td align="center">
+                            <button onclick="ResultadoOperar()" style="height: 30px; width: 40px;">=</button>
+                        </td>
+                    </tr>
+            </tbody></table>
+        </div>
+        <div>
+            <table>
+                <tbody><tr>
+                    <td>
+                        <button onclick="Saludar('')"> Saludar</button>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </body>
+</html>
